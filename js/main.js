@@ -47,7 +47,6 @@ class Poke {
         for(const property of this.types) {
             this.typeList.push(property.type.name)
         }
-        console.log(this.typeList)
     }
     weightToPounds (weight) {
         return Math.round((weight / 4.536)* 100)/100
@@ -85,7 +84,6 @@ class PokeInfo extends Poke {
       fetch(this.locationURL)
         .then(res => res.json()) 
         .then(data => {
-          console.log(data)
           for (const item of data){
             this.locationList.push(item.location_area.name)
           }
@@ -97,7 +95,7 @@ class PokeInfo extends Poke {
         });
     }
     locationCleanup(){
-        const words = this.locationList.slice(0,5).join(', ').replaceAll('-',' ').split(' ')
+        const words = this.locationList.slice(0,3).join(', ').replaceAll('-',' ').split(' ')
         for(let i = 0; i < words.length; i++){
             words[i] = words[i][0].toUpperCase() + words[i].slice(1)
         }

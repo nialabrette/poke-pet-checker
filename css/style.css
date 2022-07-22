@@ -24,7 +24,35 @@ body {
   background-size: cover;
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 50px;
+  text-shadow: 2px 2px 0px  lightyellow, -2px -2px 0px  lightyellow, 2px -2px 0px  lightyellow, -2px 2px 0px  lightyellow;
+}
+#rectangle {
+  background-color:cornsilk;
+  width: 45%;
+  margin: 0 auto;
+  border: solid 7px burlywood;
+  border-radius: 5px;
+}
+#locations {
+  font-size: 20px;
 }
 img {
   height: 40vh;
+}
+
+button {
+  appearance: button;
+  background-color: #1652F0;
+  border: 1px solid #1652F0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-family: Graphik,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  overflow: visible;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
 }
